@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="icon" href="img\logo2.webp">
+    <link rel="stylesheet" href="css/Foro.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">  
+
+
+    <title>Foro</title>
+
+</head>
+
+<body style="background-color: #F8A18B">
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #F8A18B">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                Pepito
+              </a>            
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Perfil.html">Perfil</a></li>
+                <li><a class="dropdown-item" href="#">Configuración personal</a></li>
+                <li><a class="dropdown-item" href="#">Mascotas</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="Home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Foro.html">Foro</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Adopta</a>
+          </li>
+        </ul>
+      </div>
+      <button type="button" class="btn">Salir</button>
+    </div>
+  </nav>
+  <br>
+  <!-- CONTENIDO DE LA PÁGINA -->
+  <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+  <div class="container">
+        <div class="row">
+          <!-- CONTENIDO PRINCIPAL -->
+          <div class="col-lg-9 mb-3">
+            <div class="row text-left mb-5">
+              <div class="col-lg-6 mb-3 mb-sm-0">
+                <div class="dropdown bootstrap-select form-control form-control-lg bg-white bg-op-9 text-sm w-lg-50" style="width: 100%;">
+                <select class="form-control form-control-lg bg-white bg-op-9 text-sm w-lg-50" data-toggle="select" tabindex="-98">
+                  <option> Categorias </option>
+                  <option> Recomendaciones </option>
+                  <option> Enfermedades </option>
+                </select>
+                </div>
+              </div>
+              <div class="col-lg-6 text-lg-right">
+                <div class="dropdown bootstrap-select form-control form-control-lg bg-white bg-op-9 ml-auto text-sm w-lg-50" style="width: 100%;">
+                    <select class="form-control form-control-lg bg-white bg-op-9 ml-auto text-sm w-lg-50" data-toggle="select" tabindex="-98">
+                      <option> Filtra por </option>
+                      <option> Comentarios </option>
+                      <option> Vistas </option>
+                    </select>
+                </div>
+              </div>
+            </div>
+            <!-- post 1 -->
+            <div class="card row-hover pos-relative py-3 px-3 mb-3 border-warning border-top-0 border-right-0 border-bottom-0 rounded-0">
+              <div class="row align-items-center">
+                <div class="col-md-8 mb-3 mb-sm-0">
+                  <h5>
+                    <a href="#" class="text-primary" data-bs-toggle="modal" data-bs-target="#Modal">Mis perras se pelearon después del baño</a>
+                    <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Mis perras se pelearon después del baño</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p  class="text-body">Hola, un saludo desde Chile. Les hablo porque hoy bañamos a nuestras perras Menta y Laika... el problema es que después de bañarlas, Laika que es la dominante, empezó a gruñirle muy feo a Menta (lo hace normalmente, pero esta vez fue peor). Finalmente, todo llevó a una pelea en la que ambas terminaron heridas, aunque no de gravedad. Ahora las tenemos separadas por miedo a que se peleen feo nuevamente... Escribo por si alguien conoce las causas de esto y/o qué hacer para que puedan convivir nuevamente en paz. Gracias 😃</p>
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="message-text" class="col-form-label">Comentario:</label>
+                                        <textarea class="form-control" id="message-text"></textarea>
+                                      </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">comentar</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </h5>
+                  <p class="text-sm"><span class="op-6">Posteado</span> <a class="text-black" href="#">20 minutes</a> <span class="op-6">Publicado por</span> <a class="text-black" href="#">KenyeW</a></p>
+                  <div class="text-sm op-5"> <a class="text-black mr-2" href="#">#shampoo</a> <a class="text-black mr-2" href="#">#ShampooGatito</a> <a class="text-black mr-2" href="#">#Felizgatito</a> </div>
+                </div>
+                <div class="col-md-4 op-7">
+                  <div class="row text-center op-7">
+                    <div class="col px-1"> <i class="ion-ios-chatboxes-outline icon-1x"></i> <span class="d-block text-sm">231 Comentarios</span> </div>
+                    <div class="col px-1"> <i class="ion-ios-eye-outline icon-1x"></i> <span class="d-block text-sm">300 Vistas</span> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- fin post 1 -->
+            <!-- post 2 -->
+            <div class="card row-hover pos-relative py-3 px-3 mb-3 border-primary border-top-0 border-right-0 border-bottom-0 rounded-0">
+              <div class="row align-items-center">
+                <div class="col-md-8 mb-3 mb-sm-0">
+                  <h5>
+                    <a href="#" class="text-primary">Ayuda! Mi mascotar tiene ronchas</a>
+                  </h5>
+                  <p class="text-sm"><span class="op-6">Posteado</span> <a class="text-black" href="#">54 minutes</a> <span class="op-6">Publicado por</span> <a class="text-black" href="#">DanielD</a></p>
+                  <div class="text-sm op-5"> <a class="text-black mr-2" href="#">#MascoEnferma</a> <a class="text-black mr-2" href="#">#Ayudaperruna</a> </div>
+                </div>
+                <div class="col-md-4 op-7">
+                  <div class="row text-center op-7">
+                    <div class="col px-1"> <i class="ion-ios-chatboxes-outline icon-1x"></i> <span class="d-block text-sm">210 Comentarios</span> </div>
+                    <div class="col px-1"> <i class="ion-ios-eye-outline icon-1x"></i> <span class="d-block text-sm">223 Vistas</span> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- fin post 2 -->
+            <!-- post 3 -->
+            <div class="card row-hover pos-relative py-3 px-3 mb-3 border-primary border-top-0 border-right-0 border-bottom-0 rounded-0">
+              <div class="row align-items-center">
+                <div class="col-md-8 mb-3 mb-sm-0">
+                  <h5>
+                    <a href="#" class="text-primary">Que hago si mi mascota no quiere comer nada?</a>
+                  </h5>
+                  <p class="text-sm"><span class="op-6">Posteado</span> <a class="text-black" href="#">32 minutes</a> <span class="op-6">Publicado por</span> <a class="text-black" href="#">AppStrapMaster</a></p>
+                  <div class="text-sm op-5"> <a class="text-black mr-2" href="#">#Ayuda</a> <a class="text-black mr-2" href="#">#Ayudavet</a> </div>
+                </div>
+                <div class="col-md-4 op-7">
+                  <div class="row text-center op-7">
+                    <div class="col px-1"> <i class="ion-ios-chatboxes-outline icon-1x"></i> <span class="d-block text-sm">20 Comentarios</span> </div>
+                    <div class="col px-1"> <i class="ion-ios-eye-outline icon-1x"></i> <span class="d-block text-sm">199 Vistas</span> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- fin post 3 -->
+          </div>
+          <!-- Contenido de la barra lateral -->
+          <div class="col-lg-3 mb-4 mb-lg-0 px-lg-0 mt-lg-0">
+            <div style="visibility: hidden; display: none; width: 285px; height: 801px; margin: 0px; float: none; position: static; inset: 85px auto auto;"></div><div data-settings="{&quot;parent&quot;:&quot;#content&quot;,&quot;mind&quot;:&quot;#header&quot;,&quot;top&quot;:10,&quot;breakpoint&quot;:992}" data-toggle="sticky" class="sticky" style="top: 85px;"><div class="sticky-inner">
+              <button type="button" class="btn btn-primary btn-success center-block" data-bs-toggle="modal" data-bs-target="#exampleModal">Postear</button>
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Nuevo Post</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <input class="form-control form-control-lg" type="text" placeholder="Titulo" aria-label=".form-control-lg example">
+                        <div class="mb-3">
+                          <label for="message-text" class="col-form-label">Mensaje:</label>
+                          <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Subir archivo</label>
+                            <input class="form-control" type="file" id="formFile">
+                          </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                      <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Subir Post</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white mb-3">
+                <h4 class="px-3 py-4 op-5 m-0">
+                  Post activos
+                </h4>
+                <hr class="m-0">
+                <div class="pos-relative px-3 py-3">
+                  <h6 class="text-primary text-sm">
+                    <a href="#" class="text-primary">Recomiendo shampoo loveCat</a>
+                  </h6>
+                  <p class="mb-0 text-sm"><span class="op-6">Posteado</span> <a class="text-black" href="#">39 minutes</a> <span class="op-6">Publicado por</span> <a class="text-black" href="#">Pepito</a></p>
+                </div>
+                <hr class="m-0">
+                <div class="pos-relative px-3 py-3">
+                  <h6 class="text-primary text-sm">
+                    <a href="#" class="text-primary">Mi perrita se lleva super con mi gato </a>
+                  </h6>
+                  <p class="mb-0 text-sm"><span class="op-6">Posteado
+
+                  </span> <a class="text-black" href="#">58 minutes</a> <span class="op-6">Publicado por</span> <a class="text-black" href="#">Pepito</a></p>
+                </div>
+                <hr class="m-0">
+              </div>
+              <div class="bg-white text-sm">
+                <h4 class="px-3 py-4 op-5 m-0 roboto-bold">
+                  Estatus
+                </h4>
+                <hr class="my-0">
+                <div class="row text-center d-flex flex-row op-7 mx-0">
+                  <div class="col-sm-6 flex-ew text-center py-3 border-bottom border-right"> <a class="d-block lead font-weight-bold" href="#">58</a> Visitas </div>
+                  <div class="col-sm-6 col flex-ew text-center py-3 border-bottom mx-0"> <a class="d-block lead font-weight-bold" href="#">100</a> Posteos </div>
+                </div>
+              </div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+  <!-- FOOTER -->
+  <footer class="text-center mt-5" style="background-color: #F8A18B">
+    <div class="container pt-3 pb-1">
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        ©2023 CLINICA VETERINARIA BELOVED PETS
+      </div>
+    </div>
+  </footer>
+</body> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+                crossorigin="anonymous"></script>
+</html>
+
