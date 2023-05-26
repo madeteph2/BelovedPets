@@ -48,5 +48,12 @@ body {
     cursor: pointer;
   }
 
+  button[type="submit"] {  
+    padding: 10px;
+    background-color: #75198E;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
 
 
