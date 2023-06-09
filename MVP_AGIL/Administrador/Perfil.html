@@ -1,198 +1,164 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Perfil</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>Perfil</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
-    <link rel="icon" href="img\logo2.webp">
-    <link rel="stylesheet" href="css/Perfil.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-
-    
-    <title>Perfil</title>
 </head>
-<body style="background:linear-gradient(30deg, crimson,sienna, royalblue, indianred, purple);">
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #F8A18B">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-           <li class="nav-item">
-            <a href="Home.html" class="d-block link-dark text-decoration-none" aria-expanded="false">
-                <img src="img/logo.png" alt="mdo" width="32" height="32" class="rounded-circle">
-                BelovedPets
-              </a>            
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="Home.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="Foro.html">Foro</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Adopta</a>
-          </li>
-        </ul>
+<body class="w3-content" style="max-width:1300px">
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #F8A18B">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+               <li class="nav-item">
+                <a href="#" class="d-block link-dark text-decoration-none" aria-expanded="false">
+                    <img src="../img/logo2.webp" alt="mdo" width="32" height="32" class="rounded-circle">
+                    BelovedPets
+                  </a>            
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="Foro.html">Foro</a>
+              </li>
+            </ul>
+          </div>
+          <a href="../../Base.html" type="button" class="btn bg-light border ms-auto">Cerrar sesión</a>
+        </div>
+      </nav> 
+    
+<!-- First Grid: Logo & About -->
+<div class="w3-row">
+  <div class="w3-half w3-black w3-container w3-center" style="height:700px">
+    <div class="w3-padding-64">
+      <h1>John Doe</h1>
+    </div>
+    <div class="w3-padding-64">
+      <a href="#work" class="w3-button w3-black w3-block w3-hover-teal w3-padding-16">Mascotas</a>
+      <a href="#work" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">Mis Datos</a>
+      <a href="#contact" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Contacto</a>
+      <a href="#" class="w3-button w3-black w3-block w3-hover-blue-grey w3-padding-16 disabled">Correos</a>
+    </div>
+  </div>
+  <div class="w3-half w3-blue-grey w3-container" style="height:700px">
+    <div class="w3-padding-64 w3-center">
+      <h1>Sobre Mi</h1>
+      <img src="../img/avatar3.png" class="w3-margin w3-circle" alt="Person" style="width:50%">
+      <div class="w3-left-align w3-padding-large">
+        <p>Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <p>Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
-      <a href="../../Base.html" type="button" class="btn bg-light border ms-auto">Cerrar sesión</a>
     </div>
-  </nav> 
-  <br>
-  <div class="card position-relative py-2 px-4 text-bg-dark rounded-pill">
-    <img src="img/bulldog-1024x573.jpg" class="card-img-top img-fluid" alt="...">
-    <div class="card-body little-profile text-center">
-        <div class="pro-img img-fluid" ><img src="https://github.com/mdo.png" alt="user"></div>
-    <div class="card-body">
-      <h5 class="card-title" >INFORMACIÓN</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+
+<!-- Second Grid: Work & Resume -->
+<div class="w3-row">
+  <div class="w3-half w3-light-grey w3-center" style="min-height:800px" id="work">
+    <div class="w3-padding-64">
+      <h2>Mascotas</h2>
+      <p>Son mi vida</p>
     </div>
-    <ul class="list-group-flush">
-      <li class="list-group-item" style="list-style: none; padding-right: 2%;">
-        <button type="button" class="btn btn-primary btn-md btn-rounded " data-bs-toggle="modal" data-bs-target="#Presentacion">Presentación</button>
-        <!-- Modal Presentación -->
-            <div class="modal fade" id="Presentacion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Información</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                          <div class="input-group mb-3">
-                            <span class="input-group-text">Nombre Completo</span>
-                            <input type="text" class="form-control" placeholder="Pepito Andres Villanueva" disabled>
-                          </div>
-                          <div class="input-group mb-3">
-                            <span class="input-group-text">RUT</span>
-                            <input type="text" class="form-control" placeholder="12.123.123-2" disabled>
-                          </div>
-                          <div class="mb-3">
-                            <span class="input-group-text">Descripción de experiencia</span>
-                            <textarea class="form-control" aria-label="With textarea" placeholder="Some quick example text to build on the card title and make up the bulk of the card's content." disabled></textarea>
-                          </div>
-                          <div class="mb-3">
-                            <span class="input-group-text">Nombre de clínicas y hospitales trabajados</span>
-                            <textarea class="form-control" aria-label="With textarea" placeholder="Como perros y gatos" disabled></textarea>
-                          </div>
-                          <div class="input-group mb-3">
-                            <span class="input-group-text">Fecha de ingreso</span>
-                            <input type="text" class="form-control" placeholder="25-05-2023" disabled>
-                          </div>
-                          <div class="mb-3">
-                            <span class="input-group-text">Nombre de casas de estudios </span>
-                            <textarea class="form-control" aria-label="With textarea" placeholder="Universidad Catolica" disabled></textarea>
-                          </div>
-                    </div>
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
-                    <a href="Presentación.html" class="btn btn-primary" type="button">Actualizar</a>
-        <!-- Fin Modal Presentación -->            
-      </li>
-      <br>
-      <li class="list-group-item" style="list-style: none; padding-right: 2%;">
-      <button type="button" class="btn btn-primary btn-md btn-rounded " data-bs-toggle="modal" data-bs-target="#Certificados">Certificados</button>
-        <!-- Modal Certificados -->
-            <div class="modal fade" id="Certificados" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Certificados</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                          <div class="mb-3">
-                            <span class="input-group-text">Descripción del Certificado</span>
-                            <textarea class="form-control" aria-label="With textarea" placeholder="Some quick example text to build on the card title and make up the bulk of the card's content." disabled></textarea>
-                          </div>
-                          <div class="input-group mb-3">
-                            <img src="img/descargar-pdf.png" style="width: 45px;" alt="Archivo">
-                          </div>
-                          <div class="mb-3">
-                            <span class="input-group-text">Descripción del Certificado</span>
-                            <textarea class="form-control" aria-label="With textarea" placeholder="Some quick example text to build on the card title and make up the bulk of the card's content." disabled></textarea>
-                          </div>
-                          <div class="input-group mb-3">
-                            <img src="img/descargar-pdf.png" style="width: 45px;" alt="Archivo">
-                          </div>
-                          <div class="mb-3">
-                            <span class="input-group-text">Descripción del Certificado</span>
-                            <textarea class="form-control" aria-label="With textarea" placeholder="Some quick example text to build on the card title and make up the bulk of the card's content." disabled></textarea>
-                          </div>
-                          <div class="input-group mb-3">
-                            <img src="img/descargar-pdf.png" style="width: 45px;" alt="Archivo">
-                          </div>
-                    </div>
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
-                    <a href="Certificados.html" class="btn btn-primary" type="button">Actualizar</a>
-        </li>
-        <br>
-         <!-- Fin Modal Certificados -->
-      <li class="list-group-item" style="list-style: none; padding-right: 2%;">
-        <button type="button" class="btn btn-primary btn-md btn-rounded " data-bs-toggle="modal" data-bs-target="#Contacto">Contacto</button>
-        <!-- Modal Contacto-->
-            <div class="modal fade" id="Contacto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Contacto</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                          <div class="input-group mb-3">
-                            <span class="input-group-text">Dirección del trabajo</span>
-                            <input type="text" class="form-control" placeholder="Alonso de Ovalle 54" disabled>
-                          </div>
-                          <div class="input-group mb-3">
-                            <span class="input-group-text">Numero Celular</span>
-                            <input type="text" class="form-control" placeholder="987625212" disabled>
-                          </div>
-                          <div class="input-group mb-3">
-                            <span class="input-group-text">Numero Telefono</span>
-                            <input type="text" class="form-control" placeholder="No posee" disabled>
-                          </div>
-                          <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Pepito98" aria-label="Username" disabled>
-                            <span class="input-group-text">@</span>
-                            <input type="text" class="form-control" placeholder="gmail.com" aria-label="Server" disabled>
-                          </div>
-                    </div>
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
-                    <a href="Contacto.html" class="btn btn-primary" type="button">Actualizar</a>
-      </li>
-      <!-- Fin Modal Contacto-->
-    </ul>
-    <div class="card-body text-center" style="list-style: none; ">
-      <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#Eliminar">Eliminar cuenta</a>
-      <!-- Modal -->
-        <div class="modal fade" id="Eliminar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="staticBackdropLabel">Eliminar Cuenta</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <p class="text-dark">Estas seguro de eliminar la cuenta...</p> 
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cancelar</button>
-                <a href="login.html" type="button" class="btn btn-danger">Aceptar</a>
-              </div>
+    <div class="w3-row">
+      <div class="w3-half">
+        <img src="../img/Conejo.jpg" style="width:75%">
+      </div>
+      <div class="w3-half">
+        <img src="../img/Perro.jpg" style="width:75%">
+      </div>
+    </div>
+    <div class="w3-row w3-hide-small">
+      <div class="w3-half">
+        <img src="../img/Gato.jpg" style="width:75%">
+      </div>
+    </div>
+    <br>
+  </div>
+  <div class="w3-half w3-indigo w3-container" style="min-height:800px">
+    <div class="w3-padding-64 w3-center">
+      <h2>Mis Datos</h2>
+      <div class="w3-container w3-responsive">
+        <div class="card position-relative py-2 px-4 text-bg-dark rounded-pill">
+            <div  class="container text-center">
+              <div class="card-body ">
+                  <div class="modal-body">
+                      <div class="mb-3">
+                          <span class="input-group-text">Nombre Completo</span>
+                          <input type="text" class="form-control" placeholder="Pepito Andres Villanueva">
+                      </div>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text">RUT</span>
+                        <input type="text" class="form-control" placeholder="12.123.123-2" >
+                      </div>
+                      <div class="mb-3">
+                        <span class="input-group-text">Descripción de experiencia</span>
+                        <textarea class="form-control" aria-label="With textarea" placeholder="Some quick example text to build on the card title and make up the bulk of the card's content." ></textarea>
+                      </div>
+                      <div class="mb-3">
+                        <span class="input-group-text">Nombre de clínicas y hospitales trabajados</span>
+                        <textarea class="form-control" aria-label="With textarea" placeholder="Como perros y gatos" ></textarea>
+                      </div>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text">Fecha de ingreso</span>
+                        <input type="text" class="form-control" placeholder="25-05-2023" >
+                      </div>
+                      <div class="mb-3">
+                        <span class="input-group-text">Nombre de casas de estudios </span>
+                        <textarea class="form-control" aria-label="With textarea" placeholder="Universidad Catolica" ></textarea>
+                      </div>
+                  </div>
             </div>
           </div>
-        </div>
+        </div> 
+      </div>
     </div>
-    </div>
-    
+  </div>
 </div>
-<footer class="text-center mt-5" style="background-color: #F8A18B">
+
+<!-- Third Grid: Swing By & Contact -->
+<div class="w3-row" id="contact">
+  <div class="w3-half w3-dark-grey w3-container w3-center" style="height:700px">
+    <div class="w3-padding-64">
+      <h1>BelovedPets</h1>
+    </div>
+    <div class="w3-padding-64">
+      <p>..Lorem ipusm sed vitae justo condimentum.</p>
+      <p>Chile, Santiago</p>
+      <p>+00 1515151515</p>
+      <p>test@test.com</p>
+    </div>
+  </div>
+  <div class="w3-half w3-teal w3-container" style="height:700px">
+    <div class="w3-padding-64 w3-padding-large">
+      <h1>Contacto</h1>
+      <p class="w3-opacity">PONERSE EN CONTACTO</p>
+      <form class="w3-container w3-card w3-padding-32 w3-white" action="/action_page.php" target="_blank">
+        <div class="w3-section">
+          <label>Nombre</label>
+          <input class="w3-input" style="width:100%;" type="text" required name="Name">
+        </div>
+        <div class="w3-section">
+          <label>Email</label>
+          <input class="w3-input" style="width:100%;" type="text" required name="Email">
+        </div>
+        <div class="w3-section">
+          <label>Mensage</label>
+          <input class="w3-input" style="width:100%;" type="text" required name="Message">
+        </div>
+        <button type="submit" class="w3-button w3-teal w3-right">Enviar</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container  w3-padding-16" style="background-color: #F8A18B">
     <div class="container pt-3 pb-1">
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
         ©2023 CLINICA VETERINARIA BELOVED PETS
@@ -203,6 +169,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+ 
 
 </body>
 </html>
